@@ -1,4 +1,4 @@
- import {prisma} from '../config/prisma.js'
+ import prisma from '../config/prisma.js'
 import { Inngest } from "inngest";
 
 // Create a client to send and receive events

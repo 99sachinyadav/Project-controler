@@ -6,4 +6,7 @@ const adapter = new PrismaNeon({
   connectionString: process.env.DATABASE_URL,
 })
 
-export const prisma = new PrismaClient({ adapter })
+ const prisma = global.prisma ||new PrismaClient({ adapter })
+ if(process.env.NODE_ENV === 'development') global.prisma = prisma
+
+export default prisma
