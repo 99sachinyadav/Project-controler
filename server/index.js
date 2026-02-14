@@ -15,13 +15,7 @@ app.use(cors())
 app.get('/',(req,res)=>{
     res.json({message:"Welcome to the Project Management Server"})
 })
-app.use(
-  "/api/inngest",
-  serve({
-    client: inngest,
-    functions,
-  })
-);
+ 
 app.use(clerkMiddleware())
 
 const PORT =process.env.PORT||5000
