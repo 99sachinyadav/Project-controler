@@ -16,7 +16,7 @@ app.get('/',(req,res)=>{
     res.json({message:"Welcome to the Project Management Server"})
 })
 app.use(
-  "api/inngest",
+  "/api/inngest",
   serve({
     client: inngest,
     functions,

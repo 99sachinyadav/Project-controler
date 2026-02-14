@@ -2,7 +2,7 @@
 import { Inngest } from "inngest";
 
 // Create a client to send and receive events
-export const inngest = new Inngest({ id: "project-management" });
+export const inngest = new Inngest({ id: "Project-Managment" });
 
 // inngest function to sync user creation from clerk to our database
 const  syncUserCreation = inngest.createFunction(
