@@ -4,6 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+     "postinstall": "prisma generate",
     "postinstall": "npx prisma generate",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "prisma generate && node server.js",
