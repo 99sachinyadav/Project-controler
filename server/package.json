@@ -1,14 +1,14 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
      "postinstall": "prisma generate",
     "postinstall": "npx prisma generate",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "prisma generate && node server.js",
-    "server": "node index.js"
+    "server": "node server.js"
   },
   "author": "",
   "license": "ISC",
