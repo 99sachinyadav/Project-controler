@@ -10,7 +10,7 @@ const app= express()
 dotenv.config()
 app.use(express.json())
 app.use(cors())
-app.use(clerkMiddleware())
+
 
 app.get('/',(req,res)=>{
     res.json({message:"Welcome to the Project Management Server"})
@@ -22,7 +22,7 @@ app.use(
     functions,
   })
 );
-
+app.use(clerkMiddleware())
 
 const PORT =process.env.PORT||5000
 
